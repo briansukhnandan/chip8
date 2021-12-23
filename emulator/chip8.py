@@ -162,8 +162,7 @@ class CPU:
                 hex(self.current_opcode >> 12)
                 )
             )
-            # self.call_subroutine_at_NNN()
-            print('Opcode not implemented yet')
+            self.call_subroutine_at_NNN()
 
         elif operation == 0x3:
             print('SKIP {}, operation {}'.format(
