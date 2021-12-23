@@ -90,8 +90,8 @@ class CPU:
     def dump_registers(self):
 
         # Erase contents of file first before we append.
-        # f = open("register_dump.txt", "w").close()
-        f = open("register_dump.txt", "a")
+        # f = open("debug/register_dump.txt", "w").close()
+        f = open("debug/register_dump.txt", "a")
 
         f.write('\n')
         for i in range(NUM_REGISTERS):
@@ -218,7 +218,12 @@ class CPU:
             self.skip_Vx_not_equals_Vy()
 
         elif operation == 0xA:
-            print('Opcode not implemented yet')
+            print('SET I -> {}, operation {}'.format(
+                hex(self.current_opcode & 0x0FFF),
+                hex(self.current_opcode >> 12)
+                )
+            )
+            self.set_I_NNN()
 
         elif operation == 0xB:
             print('Opcode not implemented yet')
@@ -312,9 +317,13 @@ class CPU:
 
     # 0xANNN
     def set_I_NNN(self):
-        pass
+        NNN = self.current_opcode & 0x0FFF
+        self.I = NNN
 
-    
+    # 0xBNNN
+    def jump_V0_plus_NNN(self):
+        NNN = self.current_opcode & 0x0FFF
+        self.pc = self.V[0] + NNN
 
     
     '''
