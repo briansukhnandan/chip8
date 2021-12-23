@@ -89,11 +89,11 @@ class CPU:
     '''Function to dump all register data to txt file for debug.'''
     def dump_registers(self):
 
-        # Erase contents of file first before we append.
-        # f = open("debug/register_dump.txt", "w").close()
         f = open("debug/register_dump.txt", "a")
 
         f.write('\n')
+        f.write('Opcode: '+str(hex(self.current_opcode)))
+        f.write('\n\n')
         for i in range(NUM_REGISTERS):
             s = 'V'+str(i)+' -> '+str(hex(self.V[i]))+' | '
             f.write(s)
@@ -102,9 +102,10 @@ class CPU:
                 f.write('\n')
 
         f.write('\n')
-        f.write('pc -> '+str(self.pc)+'\n')
-        f.write('sp -> '+str(self.sp)+'\n')
-        f.write('I (addr register) -> '+str(self.I)+'\n')
+        f.write('pc -> '+str(hex(self.pc))+'\n')
+        f.write('sp -> '+str(hex(self.sp))+'\n')
+        f.write('I (addr register) -> '+str(hex(self.I))+'\n')
+        f.write('\n--------------------------------------\n')
 
         f.close()
 
@@ -126,8 +127,13 @@ class CPU:
 
     
     '''Our workflow function to execute the current opcode.'''
-    def execute_current_opcode(self):
-        self.current_opcode = self.get_current_opcode()
+    def execute_current_opcode(self, debug_instruction=None):
+
+        # Only for testing specific opcodes for debugging.
+        if debug_instruction:
+            self.current_opcode = debug_instruction
+        else:
+            self.current_opcode = self.get_current_opcode()
         
         # Increment opcode before executing instruction in case
         # our next instr jumps to a diff address.
@@ -142,7 +148,7 @@ class CPU:
         if operation == 0x0:
             
             # 3 cases:
-            # 0NNN
+            # 0NNN - Not necessary for most ROMs.
             # 00E0
             # 00EE
 
@@ -207,7 +213,64 @@ class CPU:
             self.set_Vx_NN()
 
         elif operation == 0x8:
-            print('Opcode not implemented yet')
+
+            lsb = self.current_opcode & 0x000F
+
+            # 8XY0
+            if lsb == 0x0:
+                print('SET V{} -> V{}'.format(
+                    (self.current_opcode & 0x0F00) >> 8,
+                    (self.current_opcode & 0x00F0) >> 4
+                    )
+                )
+                self.set_Vx_Vy()
+
+            # 8XY1
+            elif lsb == 0x1:
+                print('SET V{} -> V{} OR V{}'.format(
+                    (self.current_opcode & 0x0F00) >> 8,
+                    (self.current_opcode & 0x0F00) >> 8,
+                    (self.current_opcode & 0x00F0) >> 4
+                    )
+                )
+                self.set_Vx_Vx_or_Vy()
+            
+            # 8XY2
+            elif lsb == 0x2:
+                # self.set_Vx_Vx_and_Vy()
+                pass
+
+            # 8XY3
+            elif lsb == 0x3:
+                # self.set_Vx_Vx_xor_Vy()
+                pass
+
+            # 8XY4
+            elif lsb == 0x4:
+                # self.add_Vy_to_Vx()
+                pass
+
+            # 8XY5
+            elif lsb == 0x5:
+                # self.subtract_Vy_from_Vx()
+                pass
+
+            # 8XY6
+            elif lsb == 0x6:
+                # self.shift_Vx_right_1()
+                pass
+
+            # 8XY7
+            elif lsb == 0x7:
+                # self.set_Vx_Vy_minus_Vx()
+                pass
+
+            # 8XYE
+            elif lsb == 0xE:
+                # self.shift_Vx_left_1()
+                pass
+
+            # print('Opcode not implemented yet')
 
         elif operation == 0x9:
             print('SKIP {}, operation {}'.format(
@@ -310,8 +373,6 @@ class CPU:
         t = self.V[x] + NN
         self.V[x] = t if t < 256 else t - 256
 
-    ### For now 0x8XXX are not implemented at all.
-
     # 0x9XY0
     def skip_Vx_not_equals_Vy(self):
         x = (self.current_opcode & 0x0F00) >> 8
@@ -331,24 +392,70 @@ class CPU:
         self.pc = self.V[0] + NNN
 
     
+    '''All 0x8XYZ instructions are implemented below.'''
+
+    # 0x8XY0
+    def set_Vx_Vy(self):
+        x = (self.current_opcode & 0x0F00) >> 8
+        y = (self.current_opcode & 0x00F0) >> 4
+
+        self.V[x] = self.V[y]
+
+    # 0x8XY1
+    def set_Vx_Vx_or_Vy(self):
+        x = (self.current_opcode & 0x0F00) >> 8
+        y = (self.current_opcode & 0x00F0) >> 4
+
+        self.V[x] = self.V[x] | self.V[y]
+
+    '''
+    ###############################
+    # Screen related functions
+    ###############################
+    '''
+
+
+    # 0x00E0
+    def clear_screen(self):
+        pass
+
+    # 0x00EE
+    def return_from_subroutine(self):
+        pass
+    
+
     '''
     ######################
     # CPU cycle function
     ######################
     '''
 
-    def cycle(self):
-        #print('Executing current opcode')
-        self.execute_current_opcode()
+
+    def cycle(self, debug_instruction=None):
+        self.execute_current_opcode(debug_instruction)
 
 
 #########################
 def cpu_cycle():
+
+    # Erase contents of file first before we append.
+    f = open("debug/register_dump.txt", "w").close()
     Chip8 = CPU()
 
-    for i in range(3):
-        Chip8.cycle()
+    # for i in range(3):
+    Chip8.cycle(debug_instruction=0x7B2A)
+    Chip8.dump_registers()
 
+    Chip8.cycle(debug_instruction=0x84B0)
+    Chip8.dump_registers()
+
+    Chip8.cycle(debug_instruction=0x54B0)
+    Chip8.dump_registers()
+
+    Chip8.cycle(debug_instruction=0x3B2A)
+    Chip8.dump_registers()
+
+    Chip8.cycle(debug_instruction=0xa28a)
     Chip8.dump_registers()
 
 cpu_cycle()
