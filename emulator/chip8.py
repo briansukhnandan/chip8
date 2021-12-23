@@ -1,5 +1,10 @@
 import sys
 
+'''
+How to run this program:
+python3 chip8.py Pong.ch8
+'''
+
 ########################################################
 NUM_REGISTERS = 0x10 # 16
 MAX_MEMORY = 0x1000 # 4096
@@ -89,7 +94,7 @@ class CPU:
         f = open("register_dump.txt", "a")
 
         f.write('\n')
-        for i in range(16):
+        for i in range(NUM_REGISTERS):
             s = 'V'+str(i)+' -> '+str(hex(self.V[i]))+' | '
             f.write(s)
 
@@ -177,7 +182,12 @@ class CPU:
             self.skip_Vx_not_equals_NN()
 
         elif operation == 0x5:
-            print('Opcode not implemented yet')
+            print('SKIP {}, operation {}'.format(
+                self.pc,
+                hex(self.current_opcode >> 12)
+                )
+            )
+            self.skip_Vx_equals_Vy()
 
         elif operation == 0x6:
             print('SET V{}->{}, operation {}'.format(
@@ -201,7 +211,12 @@ class CPU:
             print('Opcode not implemented yet')
 
         elif operation == 0x9:
-            print('Opcode not implemented yet')
+            print('SKIP {}, operation {}'.format(
+                self.pc,
+                hex(self.current_opcode >> 12)
+                )
+            )
+            self.skip_Vx_not_equals_Vy()
 
         elif operation == 0xA:
             print('Opcode not implemented yet')
@@ -231,7 +246,15 @@ class CPU:
 
     # 0x2NNN - TODO
     def call_subroutine_at_NNN(self):
-        pass
+        
+        # Save the current pc onto the stack, 2 bytes at a time.
+        self.memory[self.sp] = self.pc & 0x00FF # First 2 LSB
+        self.sp += 1 # Increment stack pointer
+        self.memory[self.sp] = (self.pc & 0xFF00) >> 8 # First 2 MSB.
+        self.sp += 1
+
+        # Set pc to NNN.
+        self.pc = self.current_opcode & 0x0FFF
 
     # 0x3XNN
     def skip_Vx_equals_NN(self):
@@ -252,6 +275,14 @@ class CPU:
         # counter to next instruction.
         if (self.V[x] != NN):
             self.pc += 2
+
+    # 0x5XY0
+    def skip_Vx_equals_Vy(self):
+        x = (self.current_opcode & 0x0F00) >> 8
+        y = (self.current_opcode & 0x00F0) >> 4
+
+        if (self.V[x] == self.V[y]):
+            self.pc += 2
         
     # 0x6XNN
     def set_Vx_NN(self):
@@ -269,6 +300,22 @@ class CPU:
         # i.e we cannot let the registers go over 255.
         t = self.V[x] + NN
         self.V[x] = t if t < 256 else t - 256
+
+    ### For now 0x8XXX are not implemented at all.
+
+    # 0x9XY0
+    def skip_Vx_not_equals_Vy(self):
+        x = (self.current_opcode & 0x0F00) >> 8
+        y = (self.current_opcode & 0x00F0) >> 4
+
+        if (self.V[x] != self.V[y]):
+            self.pc += 2
+
+    # 0xANNN
+    def set_I_NNN(self):
+        pass
+
+    
 
     
     '''
