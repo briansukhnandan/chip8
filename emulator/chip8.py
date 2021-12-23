@@ -226,7 +226,12 @@ class CPU:
             self.set_I_NNN()
 
         elif operation == 0xB:
-            print('Opcode not implemented yet')
+            print('JUMP {}, operation {}'.format(
+                hex(self.V[0] + (self.current_opcode & 0x0FFF)), 
+                hex(self.current_opcode >> 12)
+                )
+            )
+            self.jump_V0_plus_NNN()
 
         elif operation == 0xC:
             print('Opcode not implemented yet')
