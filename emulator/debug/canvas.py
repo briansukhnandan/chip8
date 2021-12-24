@@ -1,134 +1,136 @@
-print("{}".format(0x1000))
+# print("{}".format(0x1000))
 
-# for i in range(0x10):
-#     print(i)
+# # for i in range(0x10):
+# #     print(i)
 
-a = [0]*3
-print(a)
+# a = [0]*3
+# print(a)
 
-a = 0xF
+# a = 0xF
 
-print(a)
-print(a << 8)
+# print(a)
+# print(a << 8)
 
-a = bytearray(10)
-print(a)
-
-
+# a = bytearray(10)
+# print(a)
 
 
-# def getCurrentOpcode(): 	# Retrieves the value of current opcode
-
-#     # We retrieve the value in the memory for the current PC, and shift it 8 times to the left because it represents the 8 MSB of 16 bits message
-#     # We then add the value for the next memory cell, without any shifting because those are the 8 LSB
-#     # We now have our current opcode
-#     return ((self.memory[self.PC] << 8) + self.memory[self.PC+1])
-
-def loadGame(offset=0x200):
-    """
-    Load the ROM indicated by the filename into memory.
-    @param filename: the name of the file to load
-    @type filename: string
-    @param offset: the location in memory at which to load the ROM
-    @type offset: integer
-    """
-
-    memory = bytearray(4096)
-
-    romdata = open("Pong.ch8", 'rb').read()
-    for index, val in enumerate(romdata):
-        memory[offset + index] = val
-
-    return memory
 
 
-def loadGame2(): 	# Loads the game from the ROM into memory
+# # def getCurrentOpcode(): 	# Retrieves the value of current opcode
 
-    memory = bytearray(4096)
+# #     # We retrieve the value in the memory for the current PC, and shift it 8 times to the left because it represents the 8 MSB of 16 bits message
+# #     # We then add the value for the next memory cell, without any shifting because those are the 8 LSB
+# #     # We now have our current opcode
+# #     return ((self.memory[self.PC] << 8) + self.memory[self.PC+1])
 
-    i = 0x200									# Default adress to store the program
+# def loadGame(offset=0x200):
+#     """
+#     Load the ROM indicated by the filename into memory.
+#     @param filename: the name of the file to load
+#     @type filename: string
+#     @param offset: the location in memory at which to load the ROM
+#     @type offset: integer
+#     """
 
-    with open("Pong.ch8", "rb") as f: 								# Opening the ROM
-        while 1: 														# While the universe is working
-            byte = f.read(1) 											# We get a byte
-            if not byte: 												# If it is empty we reached the EOF
-                break													# Breaking out of the loop
-            memory[i] = int.from_bytes(byte, "big", signed=False) 	# Storing into the memory at the i position the value of the byte we just read
-            i += 1
+#     memory = bytearray(4096)
+
+#     romdata = open("Pong.ch8", 'rb').read()
+#     for index, val in enumerate(romdata):
+#         memory[offset + index] = val
+
+#     return memory
 
 
-    return memory
+# def loadGame2(): 	# Loads the game from the ROM into memory
 
-# loadGame()
+#     memory = bytearray(4096)
 
-# print()
-# print()
-# print()
+#     i = 0x200									# Default adress to store the program
 
-# loadGame2()
+#     with open("Pong.ch8", "rb") as f: 								# Opening the ROM
+#         while 1: 														# While the universe is working
+#             byte = f.read(1) 											# We get a byte
+#             if not byte: 												# If it is empty we reached the EOF
+#                 break													# Breaking out of the loop
+#             memory[i] = int.from_bytes(byte, "big", signed=False) 	# Storing into the memory at the i position the value of the byte we just read
+#             i += 1
 
-if loadGame() == loadGame2():
-    print('Opcodes in same positions')
-else:
-    print('Not same')
+
+#     return memory
+
+# # loadGame()
+
+# # print()
+# # print()
+# # print()
+
+# # loadGame2()
+
+# if loadGame() == loadGame2():
+#     print('Opcodes in same positions')
+# else:
+#     print('Not same')
+
+# # memory = loadGame2()
+
+# # def execute_instruction(memory):
+# #     """
+# #     Execute the next instruction pointed to by the program counter.
+# #     For testing purposes, pass the operand directly to the
+# #     function. When the operand is not passed directly to the
+# #     function, the program counter is increased by 2.
+# #     :param operand: the operand to execute
+# #     :return: returns the operand executed
+# #     """
+
+
+# #     operand = int(memory[0x200])
+# #     operand = operand << 8 # remember that 1 hex num is 4 binary cause 2^4=16.
+# #     operand += int(memory[0x200 + 1])
+# #         # self.registers['pc'] += 2
+
+# #     # Then shift by 12 bits (3 hex) to the right to get MSB which is
+# #     # our specified operation.
+# #     operation = (operand & 0xF000) >> 12
+
+# #     print(hex(operand))
+# #     print(operation)
+# #     # return self.operand
+
+# # execute_instruction(memory)
+
+
 
 # memory = loadGame2()
 
-# def execute_instruction(memory):
-#     """
-#     Execute the next instruction pointed to by the program counter.
-#     For testing purposes, pass the operand directly to the
-#     function. When the operand is not passed directly to the
-#     function, the program counter is increased by 2.
-#     :param operand: the operand to execute
-#     :return: returns the operand executed
-#     """
+# def get_current_opcode(memory):
+#     return ((memory[0x21c] << 8) + memory[0x21c+1])
 
-
-#     operand = int(memory[0x200])
-#     operand = operand << 8 # remember that 1 hex num is 4 binary cause 2^4=16.
-#     operand += int(memory[0x200 + 1])
-#         # self.registers['pc'] += 2
+# def execute_current_opcode(memory):
+#     current_opcode = get_current_opcode(memory)
 
 #     # Then shift by 12 bits (3 hex) to the right to get MSB which is
 #     # our specified operation.
-#     operation = (operand & 0xF000) >> 12
-
-#     print(hex(operand))
+#     operation = (current_opcode & 0xF000) >> 12
+#     print()
+#     print(hex(current_opcode))
 #     print(operation)
-#     # return self.operand
+#     ###########--OPCODE--##########
 
-# execute_instruction(memory)
+#     if operation == 0x2:
+#         print('CALL {}'.format(hex(current_opcode)))
 
+#     ###############################
 
+#     # pc += 2
 
-memory = loadGame2()
-
-def get_current_opcode(memory):
-    return ((memory[0x21c] << 8) + memory[0x21c+1])
-
-def execute_current_opcode(memory):
-    current_opcode = get_current_opcode(memory)
-
-    # Then shift by 12 bits (3 hex) to the right to get MSB which is
-    # our specified operation.
-    operation = (current_opcode & 0xF000) >> 12
-    print()
-    print(hex(current_opcode))
-    print(operation)
-    ###########--OPCODE--##########
-
-    if operation == 0x2:
-        print('CALL {}'.format(hex(current_opcode)))
-
-    ###############################
-
-    # pc += 2
-
-execute_current_opcode(memory)
+# execute_current_opcode(memory)
 
 # m = 0x22f6 # 0010001011110110
 # print(m) # 8950 = 0010001011110110
 
 # # 0xF000 = 1111000000000000 - So we are taking 4 MSB's. 
 # print(m & 0xF000) # 8192 = 0010000000000000
+
+print(0x2)
