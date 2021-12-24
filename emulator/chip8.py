@@ -362,22 +362,38 @@ class CPU:
             
             diff = self.current_opcode & 0x00FF
 
+            # 0xFX07
             if diff == 0x07:
-                # self.set_Vx_delay_timer()
-                pass
+                print('SET V{} -> DT, operation {}'.format(
+                    (self.current_opcode & 0x0F00) >> 8,
+                    self.timers['delay']
+                    )
+                )
+                self.set_Vx_delay_timer()
 
+            # 0xFX0A
             elif diff == 0x0A:
                 # Blocking operation
                 # self.store_key_press_in_Vx()
                 pass
 
+            # 0xFX15
             elif diff == 0x15:
-                # self.set_delay_timer_Vx()
-                pass
+                print('SET DT -> V{}, operation {}'.format(
+                    self.timers['delay'],
+                    (self.current_opcode & 0x0F00) >> 8
+                    )
+                )
+                self.set_delay_timer_Vx()
 
+            # 0xFX18
             elif diff == 0x18:
-                # self.set_sound_timer_Vx()
-                pass
+                print('SET ST -> V{}, operation {}'.format(
+                    self.timers['sound'],
+                    (self.current_opcode & 0x0F00) >> 8
+                    )
+                )
+                self.set_sound_timer_Vx()
 
             elif diff == 0x1E:
                 # self.add_Vx_to_I()
