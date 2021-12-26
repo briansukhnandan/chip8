@@ -38,8 +38,8 @@ class Display:
 
         self.surface = pygame.display.set_mode(
             size=(self.width, self.height),
-            flags=pygame.HWSURFACE | pygame.DOUBLEBUF
-            depth=self.depth,
+            flags=pygame.HWSURFACE | pygame.DOUBLEBUF,
+            depth=self.depth
         )
         
         '''After init all our parameters, clear and update the display.'''
