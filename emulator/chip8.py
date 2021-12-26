@@ -129,6 +129,15 @@ class CPU:
     def stop_CPU(self):
         self.is_running = False
 
+    '''Updating timers means to decrement them. Do not decrement if <= 0'''
+    def update_timers(self):
+
+        if self.timers['delay'] > 0:
+            self.timers['delay'] -= 1
+
+        if self.timers['sound'] > 0:
+            self.timers['sound'] -= 1
+
 
     '''#####################################################'''
     '''# ALL OPCODE RELATED IMPLEMENTATIONS ARE BELOW.     #'''
@@ -165,7 +174,7 @@ class CPU:
         # our specified operation.
         operation = (self.current_opcode & 0xF000) >> 12
 
-        ###########--OPCODE--##########
+        ###########--OPCODE IMPLEMENTATIONS--##########
         if operation == 0x0:
             
             # 3 cases:
@@ -376,7 +385,7 @@ class CPU:
             elif diff == 0xA1:
                 pass
 
-            print('Orgggggraargaepcode not implemented yet')
+            print('Opcode not implemented yet')
 
         elif operation == 0xF:
             
@@ -692,6 +701,7 @@ class CPU:
         x = (self.current_opcode & 0x0F00) >> 8
         self.timers['sound'] = self.V[x]
 
+    # 0xFX1E
     def add_Vx_to_I(self):
         x = (self.current_opcode & 0x0F00) >> 8
         self.I += self.V[x]

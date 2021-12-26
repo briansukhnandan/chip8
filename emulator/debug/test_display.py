@@ -10,7 +10,6 @@ TIMER = pygame.USEREVENT + 1
 
 def test_screen():
 
-    # while 1:
     d = Display()
     d.initialize_display()
 
@@ -32,8 +31,7 @@ def test_screen():
 
         for event in pygame.event.get():
             if event.type == TIMER:
-                # Decrement sound/delay timers.
-                pass
+                Chip8.update_timers()
 
             if event.type == pygame.QUIT:
                 Chip8.stop_CPU()
