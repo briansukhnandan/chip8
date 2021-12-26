@@ -16,7 +16,7 @@ REGISTER_LENGTH = 0x8
 ##################################################
 
 class CPU:
-    def __init__(self, ROM_path):
+    def __init__(self, ROM_path, screen):
 
         '''Our .ch8 file.'''
         self.ROM = ROM_path
@@ -63,7 +63,10 @@ class CPU:
         '''
         self.random_num = random.randint(0,255)
 
-        self.screen = d.Display()
+        '''Our pygame display initialized from another file.'''
+        self.screen = screen
+
+        self.is_running = True
 
         self.load_rom_into_memory()
 
@@ -75,6 +78,7 @@ class CPU:
         self.I = 0
         self.memory = bytearray(MAX_MEMORY)
         self.current_opcode = 0x0
+        self.is_running = True
 
         self.timers = {
             'delay' : 0,
@@ -101,7 +105,7 @@ class CPU:
     '''Function to dump all register data to txt file for debug.'''
     def dump_registers(self):
 
-        f = open("debug/register_dump.txt", "a")
+        f = open("register_dump.txt", "a")
 
         f.write('\n')
         f.write('Opcode: '+str(hex(self.current_opcode)))
@@ -120,6 +124,10 @@ class CPU:
         f.write('\n--------------------------------------\n')
 
         f.close()
+
+    '''To manage the state of whether or not CPU is running.'''
+    def stop_CPU(self):
+        self.is_running = False
 
 
     '''#####################################################'''
@@ -145,6 +153,9 @@ class CPU:
         else:
             self.current_opcode = self.get_current_opcode()
         
+        # Only for debugging purposes, to see what opcode we are executing.
+        print('Executing current opcode: 0x{}'.format( format(self.current_opcode, '04x') ))
+
         # Increment opcode before executing instruction in case
         # our next instr jumps to a diff address.
         # Each instruction is 2 bytes long so increment by 2.
@@ -158,11 +169,18 @@ class CPU:
         if operation == 0x0:
             
             # 3 cases:
-            # 0NNN - Not necessary for most ROMs.
+            # 0NNN - Not necessary for most ROMs, will NOT be implemented.
             # 00E0 - Clear display
             # 00EE - Return from Subroutine
+            if self.current_opcode == 0x00E0:
+                print('CLEARING SCREEN')
+                self.clear_screen()
 
-            print('Opcode not implemented yet')
+            if self.current_opcode == 0x00EE:
+                print('RETURNING FROM SUBROUTINE')
+                self.return_from_subroutine()
+
+            # print('Opcode not implemented yet')
 
         elif operation == 0x1:
             print('JUMP {}, operation {}'.format(
@@ -358,7 +376,7 @@ class CPU:
             elif diff == 0xA1:
                 pass
 
-            print('Opcode not implemented yet')
+            print('Orgggggraargaepcode not implemented yet')
 
         elif operation == 0xF:
             
@@ -636,7 +654,7 @@ class CPU:
 
     # 0x00E0
     def clear_screen(self):
-        pass
+        self.screen.clear_screen()
 
     # 0x00EE
     def return_from_subroutine(self):

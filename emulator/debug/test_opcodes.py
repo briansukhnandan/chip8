@@ -1,9 +1,15 @@
-from ..chip8 import CPU
+import sys
+sys.path.append("..")
+
+from chip8 import CPU
 
 def cpu_cycle():
     # Erase contents of file first before we append.
     f = open("register_dump.txt", "w").close()
-    Chip8 = CPU('../ROMs/Pong.ch8')
+    Chip8 = CPU(
+        ROM_path='../ROMs/Pong.ch8',
+        screen=None
+    )
     
     #############################################
     # Testing 0x3, 0x5, 0x7, 0xA, 0x8XY0
@@ -81,6 +87,6 @@ def cpu_cycle():
     Chip8.cycle(debug_instruction=0x9700)
     Chip8.dump_registers()
 
-
-cpu_cycle()
+if __name__ == '__main__':
+    cpu_cycle()
 

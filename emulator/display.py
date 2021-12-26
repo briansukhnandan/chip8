@@ -59,7 +59,7 @@ class Display:
     '''
 
     @staticmethod
-    def update()
+    def update():
         pygame.display.flip()
 
     @staticmethod
