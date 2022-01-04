@@ -12,7 +12,7 @@ NUM_REGISTERS = 0x10 # 16
 MAX_MEMORY = 0x1000 # 4096
 STACK_POINTER_START = 0x52
 PROGRAM_COUNTER_START = 0x200 # PC starts at 512
-REGISTER_LENGTH = 0x8
+REGISTER_BIT_LENGTH = 0x8
 ##################################################
 
 class CPU:
@@ -209,7 +209,7 @@ class CPU:
 
         elif operation == 0x3:
             print('SKIP {}, operation {}'.format(
-                self.pc,
+                hex(self.pc),
                 hex(self.current_opcode >> 12)
                 )
             )
@@ -225,7 +225,7 @@ class CPU:
 
         elif operation == 0x5:
             print('SKIP {}, operation {}'.format(
-                self.pc,
+                hex(self.pc),
                 hex(self.current_opcode >> 12)
                 )
             )
@@ -373,7 +373,12 @@ class CPU:
             self.set_Vx_rand_and_NN()
 
         elif operation == 0xD:
-            print('Opcode not implemented yet')
+            print('DRAW PIXEL AT ({}, {})'.format(
+                int(self.V[(self.current_opcode & 0x0F00) >> 8]),
+                int(self.V[(self.current_opcode & 0x00F0) >> 4])
+                )
+            )
+            self.draw_sprite_at_Vx_Vy()
 
         elif operation == 0xE:
             
@@ -539,6 +544,50 @@ class CPU:
         # Regen random_num so next random number is different.
         self.random_num = random.randint(0,255)
 
+    # 0xDXYN
+    def draw_sprite_at_Vx_Vy(self):
+        x = (self.current_opcode & 0x0F00) >> 8
+        y = (self.current_opcode & 0x00F0) >> 4
+        num_bytes = self.current_opcode & 0x000F
+
+        x_pos = self.V[x]
+        y_pos = self.V[y]
+
+        self.V[0xF] = 0
+        
+        # We need to grab n bytes starting at self.I.
+        for y_i in range(num_bytes):
+
+            b = bin(self.memory[self.I + y_i])
+            b = b[2:].zfill(8) # Ensure length is 8.
+
+            # Make sure the sprite wraps around vertically.
+            y_t = y_pos + y_i
+            y_t = y_t % self.screen.height
+
+            for x_i in range(0x8):
+
+                x_t = x_pos + x_i
+                x_t = x_t % self.screen.width
+
+                # Get color so we can set Vf accordingly.
+                color = int(b[x_i])
+                current = self.screen.get_pixel_at_coordinate(x_t, y_t)
+                
+                # Pixels are XOR'd onto the screen, so if the
+                # current pixel is on, we will set color to 0 (OFF state)
+                # and draw over that spot with the off pixel color.
+                if color == 1 and current == 1:
+                    # If 0 set to 1, else leave at 1.
+                    self.V[0xF] = self.V[0xF] | 1
+                    color = 0
+
+                elif color == 0 and current == 1:
+                    color = 1
+
+                self.screen.draw_single_pixel(x_t, y_t, color)
+
+        self.screen.update()
 
     '''##############################'''
     '''# 0x8 opcode implementations #'''
@@ -650,7 +699,7 @@ class CPU:
         # If the most-significant bit of Vx is 1, then VF is set to 1, 
         # otherwise to 0. Then Vx is multiplied by 2.
         # msb_Vx = (self.V[x] & 0x80) >> 8
-        msb_Vx = getMSB(self.V[x], REGISTER_LENGTH)
+        msb_Vx = getMSB(self.V[x], REGISTER_BIT_LENGTH)
 
         self.V[x] = self.V[x] << 1
         self.V[0xF] = msb_Vx
