@@ -275,7 +275,7 @@ class CPU:
             # Grab least significant bit to differentiate between 0x8 opcodes.
             diff = self.current_opcode & 0x000F
 
-            # 8XY0
+            # 0x8XY0
             if diff == 0x0:
                 print('SET V{} -> V{}'.format(
                     (self.current_opcode & 0x0F00) >> 8,
@@ -284,7 +284,7 @@ class CPU:
                 )
                 self.set_Vx_Vy()
 
-            # 8XY1
+            # 0x8XY1
             elif diff == 0x1:
                 print('SET V{} -> V{} OR V{}'.format(
                     (self.current_opcode & 0x0F00) >> 8,
@@ -294,7 +294,7 @@ class CPU:
                 )
                 self.set_Vx_Vx_or_Vy()
             
-            # 8XY2
+            # 0x8XY2
             elif diff == 0x2:
                 print('SET V{} -> V{} AND V{}'.format(
                     (self.current_opcode & 0x0F00) >> 8,
@@ -304,7 +304,7 @@ class CPU:
                 )
                 self.set_Vx_Vx_and_Vy()
 
-            # 8XY3
+            # 0x8XY3
             elif diff == 0x3:
                 print('SET V{} -> V{} XOR V{}'.format(
                     (self.current_opcode & 0x0F00) >> 8,
@@ -314,7 +314,7 @@ class CPU:
                 )
                 self.set_Vx_Vx_xor_Vy()
 
-            # 8XY4
+            # 0x8XY4
             elif diff == 0x4:
                 print('SET V{} -> V{} + V{}'.format(
                     (self.current_opcode & 0x0F00) >> 8,
@@ -324,7 +324,7 @@ class CPU:
                 )
                 self.add_Vy_to_Vx()
 
-            # 8XY5
+            # 0x8XY5
             elif diff == 0x5:
                 print('SET V{} -> V{} - V{}'.format(
                     (self.current_opcode & 0x0F00) >> 8,
@@ -334,7 +334,7 @@ class CPU:
                 )
                 self.subtract_Vy_from_Vx()
 
-            # 8XY6
+            # 0x8XY6
             elif diff == 0x6:
                 print('SHIFT V{} RIGHT 1'.format(
                     (self.current_opcode & 0x0F00) >> 8
@@ -342,7 +342,7 @@ class CPU:
                 )           
                 self.shift_Vx_right_1()
 
-            # 8XY7
+            # 0x8XY7
             elif diff == 0x7:
                 print('SET V{} -> V{} - V{}'.format(
                     (self.current_opcode & 0x0F00) >> 8,
@@ -352,7 +352,7 @@ class CPU:
                 )
                 self.set_Vx_Vy_minus_Vx()
 
-            # 8XYE
+            # 0x8XYE
             elif diff == 0xE:
                 print('SHIFT V{} LEFT 1'.format(
                     (self.current_opcode & 0x0F00) >> 8
@@ -405,6 +405,7 @@ class CPU:
             
             diff = self.current_opcode & 0x00FF
 
+            # 0xEX9E
             if diff == 0x9E:
                 print('SKIP NEXT IF KEY V{} PRESSED'.format(
                     (self.current_opcode & 0x0F00) >> 8
@@ -412,6 +413,7 @@ class CPU:
                 )
                 self.skip_if_key_Vx_pressed()
 
+            # 0xEXA1
             elif diff == 0xA1:
                 print('SKIP NEXT IF KEY V{} NOT PRESSED'.format(
                     (self.current_opcode & 0x0F00) >> 8
@@ -467,18 +469,34 @@ class CPU:
                 self.add_Vx_to_I()
 
             elif diff == 0x29:
-                pass
+                print('SET I SPRITE V{}'.format(
+                    (self.current_opcode & 0x0F00) >> 8
+                    )
+                )
+                self.set_I_sprite_Vx()
 
             elif diff == 0x33:
-                pass
+                print('SET BCD OF V{} IN MEM'.format(
+                    (self.current_opcode & 0x0F00) >> 8
+                    )
+                )
+                self.store_Vx_bcd_in_memory()
 
             elif diff == 0x55:
-                pass
+                print('STORE V0->V{} IN MEM'.format(
+                    (self.current_opcode & 0x0F00) >> 8
+                    )
+                )
+                self.store_V0_to_Vx_in_memory()
 
             elif diff == 0x65:
-                pass 
+                print('FILL V0->V{} FROM MEM'.format(
+                    (self.current_opcode & 0x0F00) >> 8
+                    )
+                )
+                self.fill_V0_to_Vx_in_memory()
 
-            print('Opcode not implemented yet')
+            # print('Opcode not implemented yet')
 
     #####################################################################
 
@@ -845,13 +863,45 @@ class CPU:
 
     # 0xFX29
     def set_I_sprite_Vx(self):
-        pass
+        # Each sprite is 5 bytes long in chip8.
+        x = (self.current_opcode & 0x0F00) >> 8
+        self.I = self.V[x] * 5
 
     # 0xFX33
+    def store_Vx_bcd_in_memory(self):
+
+        x = (self.current_opcode & 0x0F00) >> 8
+
+        def BCD(v):
+            ones = int(v % 10)
+            tens = int((v / 10) % 10)
+            hundreds = int((v / 100) % 10)
+
+            return [hundreds, tens, ones]
+
+        bcd = BCD(self.V[x])
+
+        self.memory[self.I] = bcd[0] # Hundreds at memory location I
+        self.memory[self.I + 1] = bcd[1] # Tens at mem I+1
+        self.memory[self.I + 2] = bcd[2] # Ones at mem I+2
 
     # 0xFX55
+    def store_V0_to_Vx_in_memory(self):
+        x = (self.current_opcode & 0x0F00) >> 8
+
+        # Vx is inclusive in this loop, so we need to do range(x+1).
+        # Registers are stored starting at I and incremented by 1.
+        for i in range(x+1):
+            self.memory[self.I + i] = self.V[i]
 
     # 0xFX65
+    def fill_V0_to_Vx_in_memory(self):
+        x = (self.current_opcode & 0x0F00) >> 8
+
+        # Vx is inclusive in this loop, so we need to do range(x+1).
+        # Registers are stored starting at I and incremented by 1.
+        for i in range(x+1):
+            self.V[i] = self.memory[self.I + i]
 
 
     '''######################'''

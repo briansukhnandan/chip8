@@ -162,11 +162,25 @@
 # print(bin(a))
 # print(bin(msb))
 
-fruits = {
-	1 : 'apple',
-	2 : 'banana',
-	3 : 'grape'
-}
+# fruits = {
+# 	1 : 'apple',
+# 	2 : 'banana',
+# 	3 : 'grape'
+# }
 
-for key, val in fruits.items():
-	print(key)
+# for key, val in fruits.items():
+# 	print(key)
+
+# each register will only be 0-255.
+v_register = 8
+
+def BCD(v):
+	ones = int(v % 10)
+	tens = int((v / 10) % 10)
+	hundreds = int((v / 100) % 10)
+
+	print(hundreds)
+	print(tens)
+	print(ones)
+
+print(BCD(v_register))
