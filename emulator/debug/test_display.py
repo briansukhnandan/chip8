@@ -24,7 +24,7 @@ def test_screen():
         0x00E0, # Clear screen
         0x6210, # Load 16 into V2
         0x8320, # Set V3 = V2 (16)
-        0xD235, # Draw a pixel at (16,16) of height 5.
+        0xD238, # Draw a pixel at (16,16) of height 5.
     ]
 
     for i in opcode_test:

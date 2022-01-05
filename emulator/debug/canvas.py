@@ -135,29 +135,38 @@
 
 # print(0x2)
 
-def bitLen(value): 	# Gives the length of an unsigned value in bits
-	length = 0
-	while (value):
-		value >>= 1
-		length += 1
-	return(length)
+# def bitLen(value): 	# Gives the length of an unsigned value in bits
+# 	length = 0
+# 	while (value):
+# 		value >>= 1
+# 		length += 1
+# 	return(length)
 
-def getMSB(value, size): 	# Gets the MSB of an unsigned value in a size-bit format
-	length = bitLen(value)
-	if(length == size):
-		return 1
-	else:
-		return 0
+# def getMSB(value, size): 	# Gets the MSB of an unsigned value in a size-bit format
+# 	length = bitLen(value)
+# 	if(length == size):
+# 		return 1
+# 	else:
+# 		return 0
 
 
-a = 0xAB
+# a = 0xAB
 
-msb = (a & 0x80) >> 8
+# msb = (a & 0x80) >> 8
 
-print(bin(a))
-print(bin(msb))
+# print(bin(a))
+# print(bin(msb))
 
-msb = getMSB(a, 8)
+# msb = getMSB(a, 8)
 
-print(bin(a))
-print(bin(msb))
+# print(bin(a))
+# print(bin(msb))
+
+fruits = {
+	1 : 'apple',
+	2 : 'banana',
+	3 : 'grape'
+}
+
+for key, val in fruits.items():
+	print(key)
