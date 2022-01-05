@@ -763,33 +763,33 @@ class CPU:
     '''# 0xE opcode implementations #'''
     '''##############################'''
 
-        # 0xEX9E
-        def skip_if_key_Vx_pressed(self):
-            x = (self.current_opcode & 0x0F00) >> 8
+    # 0xEX9E
+    def skip_if_key_Vx_pressed(self):
+        x = (self.current_opcode & 0x0F00) >> 8
 
-            # Opcode assumes the value of a keypress is stored in V[x]
-            selected_key = self.V[x]
+        # Opcode assumes the value of a keypress is stored in V[x]
+        selected_key = self.V[x]
 
-            # User will press and we will compare this with selected_key.
-            currently_pressed_key = pygame.key.get_pressed()
+        # User will press and we will compare this with selected_key.
+        currently_pressed_key = pygame.key.get_pressed()
 
-            # Check if selected_key value is 1 in currently_pressed_key.
-            # If return 1, then same key as Vx is pressed.
-            if currently_pressed_key[KEYBINDS[selected_key]]:
-                self.pc += 2
+        # Check if selected_key value is 1 in currently_pressed_key.
+        # If return 1, then same key as Vx is pressed.
+        if currently_pressed_key[KEYBINDS[selected_key]]:
+            self.pc += 2
 
-        # 0xEXA1
-        def skip_if_key_Vx_not_pressed(self):
-            x = (self.current_opcode & 0x0F00) >> 8
+    # 0xEXA1
+    def skip_if_key_Vx_not_pressed(self):
+        x = (self.current_opcode & 0x0F00) >> 8
 
-            # Opcode assumes the value of a keypress is stored in V[x]
-            selected_key = self.V[x]
+        # Opcode assumes the value of a keypress is stored in V[x]
+        selected_key = self.V[x]
 
-            # User will press and we will compare this with selected_key.
-            currently_pressed_key = pygame.key.get_pressed()
+        # User will press and we will compare this with selected_key.
+        currently_pressed_key = pygame.key.get_pressed()
 
-            if not currently_pressed_key[KEYBINDS[selected_key]]:
-                self.pc += 2
+        if not currently_pressed_key[KEYBINDS[selected_key]]:
+            self.pc += 2
     
 
     '''##############################'''
