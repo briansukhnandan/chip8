@@ -91,6 +91,7 @@ class CPU:
         #####################
         #####################
         #####################
+        self.load_fonts_into_memory()
         self.load_rom_into_memory()
 
     '''If we ever needed to reset CPU back to original state, run this function.'''
@@ -108,7 +109,34 @@ class CPU:
             'sound' : 0
         }
 
+        self.load_fonts_into_memory()
         self.load_rom_into_memory()
+
+    def load_fonts_into_memory(self):
+
+        fonts=[
+			0xF0, 0x90, 0x90, 0x90, 0xF0, 	# 0
+			0x20, 0x60, 0x20, 0x20, 0x70, 	# 1
+			0xF0, 0x10, 0xF0, 0x80, 0xF0, 	# 2
+			0xF0, 0x10, 0xF0, 0x10, 0xF0, 	# 3
+			0x90, 0x90, 0xF0, 0x10, 0x10, 	# 4
+			0xF0, 0x80, 0xF0, 0x10, 0xF0, 	# 5
+			0xF0, 0x80, 0xF0, 0x90, 0xF0, 	# 6
+			0xF0, 0x10, 0x20, 0x40, 0x40, 	# 7
+			0xF0, 0x90, 0xF0, 0x90, 0xF0, 	# 8
+			0xF0, 0x90, 0xF0, 0x10, 0xF0, 	# 9
+			0xF0, 0x90, 0xF0, 0x90, 0x90, 	# A
+			0xE0, 0x90, 0xE0, 0x90, 0xE0, 	# B
+			0xF0, 0x80, 0x80, 0x80, 0xF0, 	# C
+			0xE0, 0x90, 0x90, 0x90, 0xE0, 	# D
+			0xF0, 0x80, 0xF0, 0x80, 0xF0, 	# E
+			0xF0, 0x80, 0xF0, 0x80, 0x80 	# F
+        ]
+
+        # Enumerate starting from 0 in memory and load fonts.
+        for idx, val in enumerate(fonts):
+            self.memory[idx] = val
+    
     
     '''Function to load rom from .ch8 file into memory.'''
     def load_rom_into_memory(self):
@@ -704,13 +732,15 @@ class CPU:
     # 0x8XY6
     def shift_Vx_right_1(self):
         x = (self.current_opcode & 0x0F00) >> 8
+        y = (self.current_opcode & 0x00F0) >> 4
         
         # If the least-significant bit of Vx is 1, then VF is set to 1, 
         # otherwise 0. Then Vx is divided by 2.
         lsb_Vx = self.V[x] & 0x1
+        # lsb_Vx = int(bin(self.V[x])[-1])
 
-        self.V[x] = self.V[x] >> 1
         self.V[0xF] = lsb_Vx
+        self.V[x] = self.V[x] >> 1
 
     # 0x8XY7
     def set_Vx_Vy_minus_Vx(self):

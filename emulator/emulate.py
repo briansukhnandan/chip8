@@ -1,3 +1,4 @@
+import sys
 import pygame
 
 from chip8 import CPU
@@ -11,15 +12,15 @@ def main():
     d.initialize_display()
 
     Chip8 = CPU(
-        ROM_path='./ROMs/test_opcode.ch8',
+        ROM_path=sys.argv[1],
         screen=d
     )
 
     pygame.init()
-    pygame.time.set_timer(TIMER, 200)
+    pygame.time.set_timer(TIMER, 100)
 
     while Chip8.is_running:
-        pygame.time.wait(200)
+        pygame.time.wait(100)
         Chip8.cycle()
 
         for e in pygame.event.get():

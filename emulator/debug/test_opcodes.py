@@ -64,6 +64,9 @@ def cpu_cycle():
     Chip8.cycle(debug_instruction=0x87B5)
     Chip8.dump_registers()
 
+    Chip8.cycle(debug_instruction=0x670B)
+    Chip8.dump_registers()
+
     Chip8.cycle(debug_instruction=0x8706)
     Chip8.dump_registers()
 

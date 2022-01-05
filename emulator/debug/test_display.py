@@ -14,7 +14,7 @@ def test_screen():
     d.initialize_display()
 
     Chip8 = CPU(
-        ROM_path='../ROMs/Pong.ch8',
+        ROM_path='../ROMs/chip8-test-rom.ch8',
         screen=d
     )
 
