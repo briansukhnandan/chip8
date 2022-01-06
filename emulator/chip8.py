@@ -1,7 +1,10 @@
 import sys
 import random
-import pygame
 import display as d
+
+import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "1"
+import pygame
 
 '''
 How to run this program:

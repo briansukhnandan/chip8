@@ -4,9 +4,9 @@ Reference - http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#2.2
 
 ## Installation
 ```bash
-git clone git@github.com:briansukhnandan/chip8.git
+cd chip8/
 pip install virtualenv
-python3 -m venv venv/
+python -m venv venv/
 source venv/bin/activate
 pip install -r requirements.txt
 ```
