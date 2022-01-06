@@ -115,10 +115,11 @@ class CPU:
         self.load_fonts_into_memory()
         self.load_rom_into_memory()
 
+    '''Function to load fontfile at memory 0x0.'''
     def load_fonts_into_memory(self):
 
-        fonts=[
-			0xF0, 0x90, 0x90, 0x90, 0xF0, 	# 0
+        fonts = [
+            0xF0, 0x90, 0x90, 0x90, 0xF0, 	# 0
 			0x20, 0x60, 0x20, 0x20, 0x70, 	# 1
 			0xF0, 0x10, 0xF0, 0x80, 0xF0, 	# 2
 			0xF0, 0x10, 0xF0, 0x10, 0xF0, 	# 3
@@ -139,7 +140,6 @@ class CPU:
         # Enumerate starting from 0 in memory and load fonts.
         for idx, val in enumerate(fonts):
             self.memory[idx] = val
-    
     
     '''Function to load rom from .ch8 file into memory.'''
     def load_rom_into_memory(self):
