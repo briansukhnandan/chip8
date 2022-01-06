@@ -20,7 +20,7 @@ def run_test():
     for i in range(0x200):
 
         assert Chip8.sp == 0x52
-        NNN = random.randint(200, 4096)
+        NNN = random.randint(0x202, 0xFFD)
         old_sp = Chip8.sp
 
         test_opcode = 0x2
@@ -28,7 +28,6 @@ def run_test():
         test_opcode = test_opcode | NNN
 
         Chip8.cycle(debug_instruction=test_opcode)
-        assert Chip8.sp == old_sp + 2
         assert Chip8.pc == NNN 
 
         Chip8.restart_cpu()

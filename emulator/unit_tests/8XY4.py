@@ -1,5 +1,5 @@
-import random
 import sys
+import random
 sys.path.append('..')
 
 import os
@@ -19,9 +19,6 @@ def run_test():
 
     for i in range(0x200):
 
-        assert Chip8.pc == 0x200
-        old_pc = Chip8.pc
-
         # Don't include 0xF
         reg_labels = [
             0x0, 0x1, 0x2, 
@@ -39,23 +36,24 @@ def run_test():
 
         Chip8.V[rand_reg_label_1] = random.randint(0, 255)
         Chip8.V[rand_reg_label_2] = random.randint(0, 255)
+        tmp = Chip8.V[rand_reg_label_1]
 
-        test_opcode = 0x5
+        test_opcode = 0x8
         test_opcode = ((((test_opcode << 4) | rand_reg_label_1) << 4) | rand_reg_label_2)
-        test_opcode = (test_opcode << 4) | 0x0
+        test_opcode = (test_opcode << 4) | 0x4
 
         Chip8.cycle(debug_instruction=test_opcode)
-        
-        if Chip8.V[rand_reg_label_1] == Chip8.V[rand_reg_label_2]:
-            assert Chip8.pc == old_pc + 4
 
+        if (tmp + Chip8.V[rand_reg_label_2]) > 255:
+            assert Chip8.V[0xF] == 1
         else:
-            assert Chip8.pc == old_pc + 2
+            assert Chip8.V[rand_reg_label_1] == tmp + Chip8.V[rand_reg_label_2]
+            assert Chip8.V[0xF] == 0
 
         Chip8.restart_cpu()
 
     sys.stdout = save_stdout
-    print('5XY0: Test passed')
+    print('8XY4: Test passed')
 
 if __name__ == '__main__':
     run_test()

@@ -30,8 +30,8 @@ def run_test():
 
         rand_reg_label_1 = random.choice(reg_labels)
 
-        rand_reg_label_2 = None
-        while rand_reg_label_2 != rand_reg_label_1:
+        rand_reg_label_2 = random.choice(reg_labels)
+        while rand_reg_label_2 == rand_reg_label_1:
             rand_reg_label_2 = random.choice(reg_labels)
 
         Chip8.V[rand_reg_label_1] = random.randint(0, 255)

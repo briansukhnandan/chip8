@@ -18,14 +18,14 @@ def run_test():
     )
 
     for i in range(0x200):
-        NNN = random.randint(200, 4096)
+        NNN = random.randint(0x202, 0xFFD)
 
         test_opcode = 0x1
         test_opcode = test_opcode << 12
         test_opcode = test_opcode | NNN
 
         Chip8.cycle(debug_instruction=test_opcode)
-        assert Chip8.pc == NNN
+        assert Chip8.pc == (test_opcode & 0x0FFF)
 
         Chip8.restart_cpu()
 
