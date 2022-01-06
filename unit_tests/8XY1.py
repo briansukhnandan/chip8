@@ -1,6 +1,6 @@
 import sys
 import random
-sys.path.append('..')
+sys.path.append('../emulator')
 
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "1"
@@ -13,10 +13,11 @@ def run_test():
     sys.stdout = open('trash', 'w')
 
     Chip8 = CPU(
-        ROM_path='../ROMs/Pong.ch8',
+        ROM_path='../emulator/ROMs/Pong.ch8',
         screen=None
     )
 
+    # Run 512 tests
     for i in range(0x200):
 
         # Don't include 0xF
@@ -40,20 +41,15 @@ def run_test():
 
         test_opcode = 0x8
         test_opcode = ((((test_opcode << 4) | rand_reg_label_1) << 4) | rand_reg_label_2)
-        test_opcode = (test_opcode << 4) | 0x4
+        test_opcode = (test_opcode << 4) | 0x1
 
         Chip8.cycle(debug_instruction=test_opcode)
-
-        if (tmp + Chip8.V[rand_reg_label_2]) > 255:
-            assert Chip8.V[0xF] == 1
-        else:
-            assert Chip8.V[rand_reg_label_1] == tmp + Chip8.V[rand_reg_label_2]
-            assert Chip8.V[0xF] == 0
+        assert Chip8.V[rand_reg_label_1] == (tmp | Chip8.V[rand_reg_label_2])
 
         Chip8.restart_cpu()
-
+    
     sys.stdout = save_stdout
-    print('8XY4: Test passed')
+    print('8XY1: Test passed')
 
 if __name__ == '__main__':
     run_test()

@@ -20,3 +20,6 @@ python 9XY0.py
 python ANNN.py
 python BNNN.py
 python CXNN.py
+python FX07.py
+python FX15.py
+python FX18.py

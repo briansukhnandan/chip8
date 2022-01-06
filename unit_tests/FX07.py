@@ -1,6 +1,6 @@
 import random
 import sys
-sys.path.append('..')
+sys.path.append('../emulator')
 
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "1"
@@ -13,14 +13,11 @@ def run_test():
     sys.stdout = open('trash', 'w')
 
     Chip8 = CPU(
-        ROM_path='../ROMs/Pong.ch8',
+        ROM_path='../emulator/ROMs/Pong.ch8',
         screen=None
     )
 
     for i in range(0x200):
-
-        assert Chip8.pc == 0x200
-        old_pc = Chip8.pc
 
         # Don't include 0xF
         reg_labels = [
@@ -32,30 +29,20 @@ def run_test():
         ]
 
         rand_reg_label_1 = random.choice(reg_labels)
-
-        rand_reg_label_2 = random.choice(reg_labels)
-        while rand_reg_label_2 == rand_reg_label_1:
-            rand_reg_label_2 = random.choice(reg_labels)
-
         Chip8.V[rand_reg_label_1] = random.randint(0, 255)
-        Chip8.V[rand_reg_label_2] = random.randint(0, 255)
 
-        test_opcode = 0x5
-        test_opcode = ((((test_opcode << 4) | rand_reg_label_1) << 4) | rand_reg_label_2)
-        test_opcode = (test_opcode << 4) | 0x0
+        test_opcode = 0xF
+        test_opcode = ((test_opcode << 4) | rand_reg_label_1) << 8
+        test_opcode = test_opcode | 0x07
 
         Chip8.cycle(debug_instruction=test_opcode)
         
-        if Chip8.V[rand_reg_label_1] == Chip8.V[rand_reg_label_2]:
-            assert Chip8.pc == old_pc + 4
-
-        else:
-            assert Chip8.pc == old_pc + 2
+        assert Chip8.V[rand_reg_label_1] == Chip8.timers['delay']
 
         Chip8.restart_cpu()
 
     sys.stdout = save_stdout
-    print('5XY0: Test passed')
+    print('FX07: Test passed')
 
 if __name__ == '__main__':
     run_test()

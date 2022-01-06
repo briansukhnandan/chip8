@@ -1,6 +1,6 @@
 import random
 import sys
-sys.path.append('..')
+sys.path.append('../emulator')
 
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "1"
@@ -13,7 +13,7 @@ def run_test():
     sys.stdout = open('trash', 'w')
 
     Chip8 = CPU(
-        ROM_path='../ROMs/Pong.ch8',
+        ROM_path='../emulator/ROMs/Pong.ch8',
         screen=None
     )
 

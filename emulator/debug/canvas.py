@@ -185,11 +185,16 @@
 
 # print(BCD(v_register))
 
-rand_reg_label_1 = 0xE
-rand_reg_label_2 = 0x6
+# rand_reg_label_1 = 0xE
+# rand_reg_label_2 = 0x6
 
-opcode = 0x8
-opcode = ((((opcode << 4) | rand_reg_label_1) << 4) | rand_reg_label_2)
-opcode = (opcode << 4) | 0x1
+# opcode = 0x8
+# opcode = ((((opcode << 4) | rand_reg_label_1) << 4) | rand_reg_label_2)
+# opcode = (opcode << 4) | 0x1
 
-print(hex(opcode))
+# print(hex(opcode))
+
+a = 255
+b = a >> 1
+
+print(b)

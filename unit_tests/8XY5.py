@@ -1,6 +1,6 @@
 import sys
 import random
-sys.path.append('..')
+sys.path.append('../emulator')
 
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "1"
@@ -13,7 +13,7 @@ def run_test():
     sys.stdout = open('trash', 'w')
 
     Chip8 = CPU(
-        ROM_path='../ROMs/Pong.ch8',
+        ROM_path='../emulator/ROMs/Pong.ch8',
         screen=None
     )
 
@@ -34,38 +34,26 @@ def run_test():
         while rand_reg_label_2 == rand_reg_label_1:
             rand_reg_label_2 = random.choice(reg_labels)
 
-        Chip8.V[rand_reg_label_1] = random.randint(0, 127)
+        Chip8.V[rand_reg_label_1] = random.randint(0, 255)
+        Chip8.V[rand_reg_label_2] = random.randint(0, 255)
         tmp = Chip8.V[rand_reg_label_1]
 
         test_opcode = 0x8
         test_opcode = ((((test_opcode << 4) | rand_reg_label_1) << 4) | rand_reg_label_2)
-        test_opcode = (test_opcode << 4) | 0xE
+        test_opcode = (test_opcode << 4) | 0x5
 
         Chip8.cycle(debug_instruction=test_opcode)
 
-        # Helper functions to find MSB.
-        def bitLen(value): # Gives the length of an unsigned value in bits
-            length = 0
-            while (value):
-                value >>= 1
-                length += 1
-            return(length)
-
-        def getMSB(value, size): # Gets the MSB of an unsigned value in a size-bit format
-            length = bitLen(value)
-            if(length == size):
-                return 1
-            else:
-                return 0
-
-        assert Chip8.V[0xF] == getMSB(tmp, 8)
-
-        assert (2*tmp == Chip8.V[rand_reg_label_1])
+        if (tmp > Chip8.V[rand_reg_label_2]):
+            assert Chip8.V[rand_reg_label_1] == tmp - Chip8.V[rand_reg_label_2]
+            assert Chip8.V[0xF] == 1
+        else:
+            assert Chip8.V[0xF] == 0
 
         Chip8.restart_cpu()
 
     sys.stdout = save_stdout
-    print('8XYE: Test passed')
+    print('8XY5: Test passed')
 
 if __name__ == '__main__':
     run_test()

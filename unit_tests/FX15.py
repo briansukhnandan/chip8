@@ -1,6 +1,6 @@
 import random
 import sys
-sys.path.append('..')
+sys.path.append('../emulator')
 
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "1"
@@ -13,7 +13,7 @@ def run_test():
     sys.stdout = open('trash', 'w')
 
     Chip8 = CPU(
-        ROM_path='../ROMs/Pong.ch8',
+        ROM_path='../emulator/ROMs/Pong.ch8',
         screen=None
     )
 
@@ -30,19 +30,19 @@ def run_test():
 
         rand_reg_label_1 = random.choice(reg_labels)
         Chip8.V[rand_reg_label_1] = random.randint(0, 255)
-        NN = random.randint(0, 255)
 
-        test_opcode = 0x6
-        test_opcode = (((test_opcode << 4) | rand_reg_label_1) << 8)
-        test_opcode = test_opcode | NN
+        test_opcode = 0xF
+        test_opcode = ((test_opcode << 4) | rand_reg_label_1) << 8
+        test_opcode = test_opcode | 0x15
 
         Chip8.cycle(debug_instruction=test_opcode)
-        assert Chip8.V[rand_reg_label_1] == NN
+        
+        assert Chip8.timers['delay'] == Chip8.V[rand_reg_label_1]
 
         Chip8.restart_cpu()
 
     sys.stdout = save_stdout
-    print('6XNN: Test passed')
+    print('FX15: Test passed')
 
 if __name__ == '__main__':
     run_test()
