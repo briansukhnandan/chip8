@@ -1,5 +1,5 @@
-import random
 import sys
+import random
 sys.path.append('..')
 
 import os
@@ -17,6 +17,7 @@ def run_test():
         screen=None
     )
 
+    # Run 512 tests
     for i in range(0x200):
 
         # Don't include 0xF
@@ -30,21 +31,25 @@ def run_test():
 
         rand_reg_label_1 = random.choice(reg_labels)
 
-        Chip8.V[rand_reg_label_1] = random.randint(0, 127)
-        NN = random.randint(0, 127)
+        rand_reg_label_2 = None
+        while rand_reg_label_2 != rand_reg_label_1:
+            rand_reg_label_2 = random.choice(reg_labels)
+
+        Chip8.V[rand_reg_label_1] = random.randint(0, 255)
+        Chip8.V[rand_reg_label_2] = random.randint(0, 255)
         tmp = Chip8.V[rand_reg_label_1]
 
-        test_opcode = 0x7
-        test_opcode = (((test_opcode << 4) | rand_reg_label_1) << 8)
-        test_opcode = test_opcode | NN
+        test_opcode = 0x8
+        test_opcode = ((((test_opcode << 4) | rand_reg_label_1) << 4) | rand_reg_label_2)
+        test_opcode = (test_opcode << 4) | 0x1
 
         Chip8.cycle(debug_instruction=test_opcode)
-        assert Chip8.V[rand_reg_label_1] == (tmp + NN)
+        assert Chip8.V[rand_reg_label_1] == (tmp | Chip8.V[rand_reg_label_2])
 
         Chip8.restart_cpu()
-
+    
     sys.stdout = save_stdout
-    print('7XNN: Test passed')
+    print('8XY1: Test passed')
 
 if __name__ == '__main__':
     run_test()

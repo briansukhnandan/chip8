@@ -172,15 +172,24 @@
 # 	print(key)
 
 # each register will only be 0-255.
-v_register = 8
+# v_register = 8
 
-def BCD(v):
-	ones = int(v % 10)
-	tens = int((v / 10) % 10)
-	hundreds = int((v / 100) % 10)
+# def BCD(v):
+# 	ones = int(v % 10)
+# 	tens = int((v / 10) % 10)
+# 	hundreds = int((v / 100) % 10)
 
-	print(hundreds)
-	print(tens)
-	print(ones)
+# 	print(hundreds)
+# 	print(tens)
+# 	print(ones)
 
-print(BCD(v_register))
+# print(BCD(v_register))
+
+rand_reg_label_1 = 0xE
+rand_reg_label_2 = 0x6
+
+opcode = 0x8
+opcode = ((((opcode << 4) | rand_reg_label_1) << 4) | rand_reg_label_2)
+opcode = (opcode << 4) | 0x1
+
+print(hex(opcode))

@@ -8,3 +8,4 @@ python 5XY0.py
 python 6XNN.py
 python 7XNN.py
 python 8XY0.py
+python 8XY1.py

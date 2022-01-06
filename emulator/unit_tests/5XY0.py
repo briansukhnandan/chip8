@@ -1,3 +1,4 @@
+import random
 import sys
 sys.path.append('..')
 
@@ -16,43 +17,42 @@ def run_test():
         screen=None
     )
 
-    assert Chip8.pc == 0x200
-    old_pc = Chip8.pc
+    for i in range(0x200):
 
-    Chip8.V[10] = 0x12
-    Chip8.V[11] = 0x12
-    Chip8.cycle(debug_instruction=0x5AB0)
-    assert Chip8.pc == old_pc + 4
+        assert Chip8.pc == 0x200
+        old_pc = Chip8.pc
 
-    Chip8.restart_cpu()
+        # Don't include 0xF
+        reg_labels = [
+            0x0, 0x1, 0x2, 
+            0x3, 0x4, 0x5, 
+            0x6, 0x7, 0x8, 
+            0x9, 0xA, 0xB,
+            0xC, 0xD, 0xE
+        ]
 
-    Chip8.V[2] = 0x63
-    Chip8.V[5] = 0x64
-    Chip8.cycle(debug_instruction=0x5250)
-    assert Chip8.pc == old_pc + 2
+        rand_reg_label_1 = random.choice(reg_labels)
 
-    Chip8.restart_cpu()
+        rand_reg_label_2 = None
+        while rand_reg_label_2 != rand_reg_label_1:
+            rand_reg_label_2 = random.choice(reg_labels)
 
-    Chip8.V[1] = 0x63
-    Chip8.V[10] = 0xFE
-    Chip8.cycle(debug_instruction=0x51A0)
-    assert Chip8.pc == old_pc + 2
+        Chip8.V[rand_reg_label_1] = random.randint(0, 255)
+        Chip8.V[rand_reg_label_2] = random.randint(0, 255)
 
-    Chip8.restart_cpu()
+        test_opcode = 0x5
+        test_opcode = ((((test_opcode << 4) | rand_reg_label_1) << 4) | rand_reg_label_2)
+        test_opcode = (test_opcode << 4) | 0x0
 
-    Chip8.V[2] = 0x2
-    Chip8.V[12] = 0xD1
-    Chip8.cycle(debug_instruction=0x52C0)
-    assert Chip8.pc == old_pc + 2
+        Chip8.cycle(debug_instruction=test_opcode)
+        
+        if Chip8.V[rand_reg_label_1] == Chip8.V[rand_reg_label_2]:
+            assert Chip8.pc == old_pc + 4
 
-    Chip8.restart_cpu()
+        else:
+            assert Chip8.pc == old_pc + 2
 
-    Chip8.V[3] = 0xFE
-    Chip8.V[7] = 0xFE
-    Chip8.cycle(debug_instruction=0x5370)
-    assert Chip8.pc == old_pc + 4
-
-    Chip8.restart_cpu()
+        Chip8.restart_cpu()
 
     sys.stdout = save_stdout
     print('5XY0: Test passed')

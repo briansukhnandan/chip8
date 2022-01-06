@@ -1,3 +1,4 @@
+import random
 import sys
 sys.path.append('..')
 
@@ -16,35 +17,29 @@ def run_test():
         screen=None
     )
 
-    Chip8.cycle(debug_instruction=0x6AB1)
-    assert Chip8.V[10] == 0xB1
+    for i in range(0x200):
 
-    Chip8.restart_cpu()
+        # Don't include 0xF
+        reg_labels = [
+            0x0, 0x1, 0x2, 
+            0x3, 0x4, 0x5, 
+            0x6, 0x7, 0x8, 
+            0x9, 0xA, 0xB,
+            0xC, 0xD, 0xE
+        ]
 
-    Chip8.cycle(debug_instruction=0x6327)
-    assert Chip8.V[3] == 0x27
+        rand_reg_label_1 = random.choice(reg_labels)
+        Chip8.V[rand_reg_label_1] = random.randint(0, 255)
+        NN = random.randint(0, 255)
 
-    Chip8.restart_cpu()
+        test_opcode = 0x6
+        test_opcode = (((test_opcode << 4) | rand_reg_label_1) << 8)
+        test_opcode = test_opcode | NN
 
-    Chip8.cycle(debug_instruction=0x667A)
-    assert Chip8.V[6] == 0x7A
+        Chip8.cycle(debug_instruction=test_opcode)
+        assert Chip8.V[rand_reg_label_1] == NN
 
-    Chip8.restart_cpu()
-
-    Chip8.cycle(debug_instruction=0x6803)
-    assert Chip8.V[8] == 0x03
-
-    Chip8.restart_cpu()
-
-    Chip8.cycle(debug_instruction=0x6E21)
-    assert Chip8.V[14] == 0x21
-
-    Chip8.restart_cpu()
-
-    Chip8.cycle(debug_instruction=0x6217)
-    assert Chip8.V[2] == 0x17
-
-    Chip8.restart_cpu()
+        Chip8.restart_cpu()
 
     sys.stdout = save_stdout
     print('6XNN: Test passed')

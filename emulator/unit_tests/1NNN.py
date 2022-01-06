@@ -1,3 +1,4 @@
+import random
 import sys
 sys.path.append('..')
 
@@ -16,28 +17,17 @@ def run_test():
         screen=None
     )
 
-    assert Chip8.pc == 0x200
+    for i in range(0x200):
+        NNN = random.randint(200, 4096)
 
-    Chip8.cycle(debug_instruction=0x1204)
-    assert Chip8.pc == 0x204
+        test_opcode = 0x1
+        test_opcode = test_opcode << 12
+        test_opcode = test_opcode | NNN
 
-    Chip8.cycle(debug_instruction=0x1210)
-    assert Chip8.pc == 0x210
+        Chip8.cycle(debug_instruction=test_opcode)
+        assert Chip8.pc == NNN
 
-    Chip8.cycle(debug_instruction=0x1300)
-    assert Chip8.pc == 0x300
-
-    Chip8.cycle(debug_instruction=0x1304)
-    assert Chip8.pc == 0x304
-
-    Chip8.cycle(debug_instruction=0x1312)
-    assert Chip8.pc == 0x312
-
-    Chip8.cycle(debug_instruction=0x1316)
-    assert Chip8.pc == 0x316
-
-    Chip8.cycle(debug_instruction=0x1322)
-    assert Chip8.pc == 0x322
+        Chip8.restart_cpu()
 
     sys.stdout = save_stdout
     print('1NNN: Test passed')
