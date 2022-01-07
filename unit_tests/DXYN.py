@@ -50,7 +50,7 @@ def run_test():
         Chip8.cycle(debug_instruction=test_opcode)
         assert Chip8.screen.get_pixel_at_coordinate(x=Chip8.V[rand_reg_label_1], y=Chip8.V[rand_reg_label_2]) == 1
 
-        pygame.time.wait(2)
+        # pygame.time.wait(2)
         
         Chip8.cycle(debug_instruction=0x00E0)
         assert Chip8.screen.get_pixel_at_coordinate(random.randint(1,63), y=random.randint(1,31)) == 0
