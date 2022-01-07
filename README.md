@@ -2,7 +2,7 @@
 An experimental chip8 interpreter written in Python <br />
 Reference - http://devernay.free.fr/hacks/chip8/C8TECH10.HTM
 
-## Installation
+## Setup
 Keep in mind the steps below assume you are using `python >= 3.6`
 ```bash
 cd chip8/
@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ## Usage
 ```bash
 cd emulator/
-python3 emulate.py <ROM PATH>
+python emulate.py <ROM PATH>
 ```
 
 ## Run tests
