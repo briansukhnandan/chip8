@@ -18,4 +18,10 @@ python3 emulate.py <ROM PATH>
 ```
 
 ## Run tests
-I've included some unit tests in 
+I've included some unit tests in `unit_tests/` which you can run
+by doing:
+```bash
+cd unit_tests/
+chmod +x run_unit_tests.sh
+./run_unit_tests.sh
+```
