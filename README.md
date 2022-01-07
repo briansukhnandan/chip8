@@ -27,10 +27,9 @@ chmod +x run_unit_tests.sh
 ```
 
 ## Examples
-###Pong<br /><br>
+**Pong**<br /><br>
 ![pong](examples/pong_demonstration.gif)
 
-<br /><br />
 Controls:
 `1` and `4` control the left paddle
 `z` and `x` control the right paddle
