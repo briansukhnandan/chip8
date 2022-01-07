@@ -30,7 +30,7 @@ chmod +x run_unit_tests.sh
 **Pong**<br /><br>
 ![pong](examples/pong_demonstration.gif)
 
-Controls:<br />
-    - `1` and `4` control the left paddle<br />
-    - `z` and `x` control the right paddle<br />
-    - `BACKSPACE` quits the emulator
+Controls:
+- `1` and `4` control the left paddle
+- `z` and `x` control the right paddle
+- `BACKSPACE` quits the emulator
