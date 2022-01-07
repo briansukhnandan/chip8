@@ -3,7 +3,7 @@ A w.i.p chip8 interpreter written in Python <br />
 Reference - http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#2.2
 
 ## Installation
-Keep in mind the steps assume you are using `python >= 3.6`
+Keep in mind the steps below assume you are using `python >= 3.6`
 ```bash
 cd chip8/
 pip install virtualenv
