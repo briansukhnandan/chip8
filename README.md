@@ -1,5 +1,5 @@
 # chip8
-An experimental chip8 interpreter written in Python <br />
+An experimental chip8 emulator written in Python <br />
 Reference - http://devernay.free.fr/hacks/chip8/C8TECH10.HTM
 
 ## Setup
