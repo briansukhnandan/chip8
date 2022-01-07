@@ -18,7 +18,7 @@ python3 emulate.py <ROM PATH>
 ```
 
 ## Run tests
-I've included some unit tests in `unit_tests/` which you can run
+I've included some tests for each opcode in `unit_tests/` which you can run
 by doing:
 ```bash
 cd unit_tests/
