@@ -1,0 +1,8 @@
+venv/
+venv/*
+__pycache__/*
+emulator/__pycache__/
+emulator/__pycache__/*
+.DS_Store
+emulator/.DS_Store
+unit_tests/trash

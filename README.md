@@ -27,5 +27,5 @@ chmod +x run_unit_tests.sh
 ```
 
 ## Examples
-Pong
+Pong<br />
 ![pong](examples/pong_demonstration.gif)
