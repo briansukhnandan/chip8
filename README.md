@@ -31,7 +31,7 @@ chmod +x run_unit_tests.sh
 \
 ![testrom](examples/testrom_demonstration.png)
 
-\
+<br/>
 
 **Pong**\
 \
