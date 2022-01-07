@@ -27,6 +27,11 @@ chmod +x run_unit_tests.sh
 ```
 
 ## Examples
+**Test ROM** (courtesy of [@metteo](https://github.com/metteo/chip8-test-rom))
+![testrom](examples/testrom_demonstration.png)
+
+<br />
+
 **Pong**<br /><br>
 ![pong](examples/pong_demonstration.gif)
 
