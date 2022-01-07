@@ -25,3 +25,7 @@ cd unit_tests/
 chmod +x run_unit_tests.sh
 ./run_unit_tests.sh
 ```
+
+## Examples
+Pong
+![pong](examples/pong_demonstration.gif)
