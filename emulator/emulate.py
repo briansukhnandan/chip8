@@ -17,10 +17,10 @@ def main():
     )
 
     pygame.init()
-    pygame.time.set_timer(TIMER, 100)
+    pygame.time.set_timer(TIMER, 2)
 
     while Chip8.is_running:
-        pygame.time.wait(100)
+        pygame.time.wait(2)
         Chip8.cycle()
 
         for e in pygame.event.get():
