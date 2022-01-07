@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Do all arithmetic/graphics opcodes
 python 1NNN.py
 python 2NNN.py
 python 3XNN.py
@@ -29,3 +30,7 @@ python FX29.py
 python FX33.py
 python FX55.py
 python FX65.py
+
+# Lastly do keyboard-related opcode tests.
+python EX9E.py
+python EXA1.py

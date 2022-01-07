@@ -143,7 +143,7 @@ class CPU:
     
     '''Function to load rom from .ch8 file into memory.'''
     def load_rom_into_memory(self):
-        print('Loading ROM into memory...')
+        # print('Loading ROM into memory...')
         i = PROGRAM_COUNTER_START # All chip 8 roms will have pc set to 0x200.
 
         with open(self.ROM, "rb") as f:
