@@ -1,1537 +1,1537 @@
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf865
+FILL V0->V8 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfb18
-SET ST -> V0, operation 11
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf418
-SET ST -> V0, operation 4
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf818
-SET ST -> V0, operation 8
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xfc65
+FILL V0->V12 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfa18
-SET ST -> V0, operation 10
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfc18
-SET ST -> V0, operation 12
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf765
+FILL V0->V7 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf318
-SET ST -> V0, operation 3
+Executing current opcode: 0xf165
+FILL V0->V1 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfd18
-SET ST -> V0, operation 13
+Executing current opcode: 0xfa65
+FILL V0->V10 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf365
+FILL V0->V3 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xfe18
-SET ST -> V0, operation 14
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf618
-SET ST -> V0, operation 6
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf265
+FILL V0->V2 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xfd65
+FILL V0->V13 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xfb65
+FILL V0->V11 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf218
-SET ST -> V0, operation 2
+Executing current opcode: 0xf565
+FILL V0->V5 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf918
-SET ST -> V0, operation 9
+Executing current opcode: 0xfe65
+FILL V0->V14 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf118
-SET ST -> V0, operation 1
+Executing current opcode: 0xf965
+FILL V0->V9 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf718
-SET ST -> V0, operation 7
+Executing current opcode: 0xf665
+FILL V0->V6 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf018
-SET ST -> V0, operation 0
+Executing current opcode: 0xf465
+FILL V0->V4 FROM MEM
 Loading ROM into memory...
-Executing current opcode: 0xf518
-SET ST -> V0, operation 5
+Executing current opcode: 0xf065
+FILL V0->V0 FROM MEM
 Loading ROM into memory...

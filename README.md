@@ -16,3 +16,6 @@ pip install -r requirements.txt
 cd emulator/
 python3 emulate.py <ROM PATH>
 ```
+
+## Run tests
+I've included some unit tests in 

@@ -23,3 +23,8 @@ python CXNN.py
 python FX07.py
 python FX15.py
 python FX18.py
+python FX1E.py
+python FX29.py
+python FX33.py
+python FX55.py
+python FX65.py
